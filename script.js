@@ -1,19 +1,15 @@
-function highlight() {
-    //Write your code here
+const highlight = () => {
+    let boldWords = document.querySelectorAll("strong");
 
-	boldWords.forEach((word)=>{
-		word.style.color = 'rgb(0, 128, 0)'
-	})
-}
+    for (let i = 0; i < boldWords.length; i++) {
+        boldWords[i].style.color = "rgb(0, 128, 0)";
+    }
+};
 
+const return_normal = () => {
+    let boldWords = document.querySelectorAll("strong");
 
-function return_normal() {
-    //Write your code here
-	boldWords.forEach((word)=>{
-
-	word.style.color = 'rgb(0, 0, 0)'
-		
-	})
-
-    
-}
+    for (let i = 0; i < boldWords.length; i++) {
+        boldWords[i].style.color = "rgb(0, 0, 0)";
+    }
+};
